@@ -1,0 +1,8 @@
+<h1>All Database</h1>
+
+<form action="/{{database}}" method="post">
+      {% for database in data %}
+        <button onclick="location.href='/{{database}}'" type="button">{{database}}</button>
+        <br>
+       {%endfor%}
+</form>

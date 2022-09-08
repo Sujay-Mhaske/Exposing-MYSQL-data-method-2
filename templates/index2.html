@@ -1,0 +1,8 @@
+<h1>All Tables</h1>
+
+<form action="/{{database}}/{{tables}}" method="post">
+      {% for tables in data %}
+        <button onclick="location.href='/{{database}}/{{tables}}'" type="button">{{tables}}</button>
+        <br>
+       {%endfor%}
+</form>
